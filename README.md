@@ -40,8 +40,12 @@ Based on the successful API response from above, I was able to populate the data
 
 ![Alt text](https://github.com/heecheon92/Android-Project/blob/master/event_screen.png "Event Screen")
 
+As you can see the image above, I am currently working on a filter bar that searches for events based on search input.
+
 # Event Screen
 
 Each event on the recycler view is clickable and, once clicked, it displays a detail information about the event and speaker for that event.
+
+![Alt text](https://github.com/heecheon92/Android-Project/blob/master/event_info.png "Event and Speaker")
 
 

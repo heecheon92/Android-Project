@@ -24,7 +24,7 @@ After putting arbitrary inputs for required parameters, I am getting a login tok
 ![Alt text](https://github.com/heecheon92/Android-Project/blob/master/login_screen.png "Login Screen")
 
 
-# Event Screen
+# Event List
 
 When attempting to access the event list, I got "message: This action is unauthorized."
 
@@ -39,3 +39,9 @@ I tried "Authentication" but no success. But the message says "unauthorized", so
 Based on the successful API response from above, I was able to populate the data on a recycler view.
 
 ![Alt text](https://github.com/heecheon92/Android-Project/blob/master/event_screen.png "Event Screen")
+
+# Event Screen
+
+Each event on the recycler view is clickable and, once clicked, it displays a detail information about the event and speaker for that event.
+
+

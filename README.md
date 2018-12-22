@@ -21,4 +21,4 @@ After putting arbitrary inputs for required parameters, I am getting a login tok
 
 ![Alt text](https://github.com/heecheon92/Android-Project/blob/master/token_postman.png "Login Token")
 
-![Alt text](https://github.com/heecheon92/Android-Project/blob/master/login_screen.png "Login Screen")
+

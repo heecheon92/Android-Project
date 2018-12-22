@@ -1,6 +1,12 @@
 # Android-Project
 Local Event App
 
+Name: Heecheon Park
+School: Minnesota State University, Moorhead
+Major: Computer Science
+
+Second semester of Junior status.
+
 # Introduction
 This project is to demonstrate an open project by Myriad Mobile for Internship Challenge.
 

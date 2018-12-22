@@ -30,4 +30,8 @@ When attempting to access the event list, I got "message: This action is unautho
 
 So I added a "Authorization" header with a value of my login token.
 
+I spent a fair amount of time to figure out which header is required. I know O-Auth uses "Authentication" as a default header.
+
+I tried "Authentication" but no success. But the message says "unauthorized", so I tried with "Authorization".
+
 ![Alt text](https://github.com/heecheon92/Android-Project/blob/master/event_postman.png "Event Postman")

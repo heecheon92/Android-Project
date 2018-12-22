@@ -30,3 +30,4 @@ When attempting to access the event list, I got "message: This action is unautho
 
 So I added a "Authorization" header with a value of my login token.
 
+![Alt text](https://github.com/heecheon92/Android-Project/blob/master/event_postman.png "Event Postman")

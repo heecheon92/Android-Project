@@ -35,3 +35,7 @@ I spent a fair amount of time to figure out which header is required. I know O-A
 I tried "Authentication" but no success. But the message says "unauthorized", so I tried with "Authorization".
 
 ![Alt text](https://github.com/heecheon92/Android-Project/blob/master/event_postman.png "Event Postman")
+
+Based on the successful API response from above, I was able to populate the data on a recycler view.
+
+![Alt text](https://github.com/heecheon92/Android-Project/blob/master/event_screen.png "Event Screen")

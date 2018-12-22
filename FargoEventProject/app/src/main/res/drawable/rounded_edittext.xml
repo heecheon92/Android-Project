@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" android:padding="10dp">
+    <solid android:color="#3F000000"/>
+    <!--
+        Learned a new thing:
+
+        The color attribute refers to a transparency of this custom edit text.
+        The first 2 values after '#' matters the most.
+
+        For precision, if you want highest transparency, let's say 0% opacity, then,
+
+        0 / 100 * 255 => replace the value with hexadecimal value.
+
+        For example, I want 50% transparency, or 50% opacity.
+
+        50 / 100 * 255 => 7F
+        ....
+        ....
+        Therefore "#7F0000000" is 50% of transparency (opacity).
+
+     -->
+    <corners
+        android:bottomRightRadius="15dp"
+        android:bottomLeftRadius="15dp"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp"/>
+</shape>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ParkFinalProject</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="fargo_events_app">Fargo Events App</string>
+    <string name="help_ndon_t_have_an_account">Help:  Don\'t have an account?</string>
+    <string name="login_as_a_guest">Login as a guest (Free Pass)</string>
+    <string name="add">add</string>
+    <string name="reset">reset</string>
+    <string name="about">about</string>
+    <string name="exit">exit</string>
+    <string name="log_out">Log Out</string>
+</resources>

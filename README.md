@@ -22,3 +22,11 @@ After putting arbitrary inputs for required parameters, I am getting a login tok
 ![Alt text](https://github.com/heecheon92/Android-Project/blob/master/token_postman.png "Login Token")
 
 ![Alt text](https://github.com/heecheon92/Android-Project/blob/master/login_screen.png "Login Screen")
+
+
+# Event Screen
+
+When attempting to access the event list, I got "message: This action is unauthorized."
+
+So I added a "Authorization" header with a value of my login token.
+

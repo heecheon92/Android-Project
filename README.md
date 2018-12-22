@@ -17,4 +17,8 @@ I was able to retrieve following response from "https://challenge.myriadapps.com
 
 Now I know that "Username" and "Password" parameters are required to receive a proper API response.
 
+After putting arbitrary inputs for required parameters, I am getting a login token.
+
+![Alt text](https://github.com/heecheon92/Android-Project/blob/master/token_postman.png "Login Token")
+
 ![Alt text](https://github.com/heecheon92/Android-Project/blob/master/login_screen.png "Login Screen")

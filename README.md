@@ -8,7 +8,7 @@ School: Minnesota State University, Moorhead
 Major: Computer Science
 
 
-Second semester as a Junior.
+Second semester as a Junior. (As of Fall Semester 2018)
 
 # Introduction
 This project is to demonstrate an open project by Myriad Mobile for Internship Challenge.

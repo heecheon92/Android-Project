@@ -18,7 +18,7 @@ Following contents are records of my journey to work on the project.
 
 # Login Screen
 
-The project instruction has a clear instruction; however, some problems are required to be solved by project workers.
+The project instruction is clear; however, some problems are required to be solved by project participants.
 
 Initially, I had to figure out what internal procedures are to obtain a login token.
 

@@ -1,6 +1,7 @@
 package activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.design.widget.Snackbar;
@@ -43,6 +44,9 @@ public class EventActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
 
+        SharedPreferences pref;
+        SharedPreferences.Editor editor;
+
         Bundle bundle = getIntent().getBundleExtra("bundle");
         Event event = bundle.getParcelable("event");
         Integer id = bundle.getInt("id");
@@ -70,23 +74,8 @@ public class EventActivity extends AppCompatActivity {
         String[] dateEndParser = dateEnd.split("T");
         String[] timeStartParser = dateStartParser[1].split(":");
         String[] timeEndParser = dateEndParser[1].split(":");
-
-        /*SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
-        try {
-            Date d1 = df.parse(dateStart);
-            Date d2 = df.parse(dateEnd);
-
-            long diff = d2.getTime() - d1.getTime();
-            long diffSeconds = diff / 1000 % 60;
-            long diffMinutes = diff / (60 * 1000) % 60;
-            long diffHours = diff / (60 * 60 * 1000) % 24;
-            long diffDays = diff / (24 * 60 * 60 * 1000);
-
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH");
-
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }*/
+        pref = getApplicationContext().getSharedPreferences("MyPref", 0);
+        String token = pref.getString("token", null);
 
         //ml_eventDescription.append("ID:" + event.getId() +"\n");
         ml_eventDescription.append("Title:" + event.getTitle() +"\n");
@@ -95,10 +84,6 @@ public class EventActivity extends AppCompatActivity {
         ml_eventDescription.append("Date:" + dateStartParser[0] + " " +
                 timeStartParser[0] + ":" + timeStartParser[1] + " ~ " +
                 timeEndParser[0] + ":" + timeEndParser[1] + "\n");
-        /*for (int j = 0; j < speakersIDList.size(); j++)
-        {
-            ml_eventDescription.append("Speakers:" + speakersIDList.get(j) +"\n");
-        }*/
 
         Toast.makeText(getApplicationContext(), event.getTitle().toString(), Toast.LENGTH_LONG).show();
 
@@ -124,7 +109,7 @@ public class EventActivity extends AppCompatActivity {
             public void onFailure(Call<Speaker> call, Throwable t) {
 
             }
-        }, "supersecrettoken", id);
+        }, token, id);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
